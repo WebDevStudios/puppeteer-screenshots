@@ -10,7 +10,12 @@ Clone the repo:
 git clone git@github.com:gregrickaby/puppeteer-screenshots.git
 ```
 
-Install dependencies
+Change directories:
+```bash
+cd puppeteer-screenshots
+```
+
+Install the dependencies:
 
 ```bash
 yarn
@@ -18,7 +23,7 @@ yarn
 
 ## 💻 Usage
 
-First, edit the list of pages you want to take screenshots of and save the file.
+1. Edit the list of pages you want to take screenshots of in `src/webPages.js`. When you're finished, save the file.
 
 ```js
 // src/webPages.js
@@ -38,13 +43,13 @@ module.exports = [
 ]
 ```
 
-Next, run the script:
+2. Run the script:
 
 ```bash
 yarn start
 ```
 
-Finally, screenshots will appear in the `src/screenshots` directory:
+3. Screenshots will appear in the `src/screenshots` directory:
 
 ```text
 /screenshots
