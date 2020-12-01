@@ -1,15 +1,15 @@
 'use strict'
 process.setMaxListeners(100)
 const puppeteer = require('puppeteer')
-const webPages = require('./webPages.js')
+const config = require('./config.js')
 
 /**
  * Loop over and take screenshots.
  */
-for (var i = 0; i < webPages.length; i++) {
-  doDesktopScreenCapture(webPages[i]['url'], webPages[i]['name'])
-  doTabletScreenCapture(webPages[i]['url'], webPages[i]['name'])
-  doMobileScreenCapture(webPages[i]['url'], webPages[i]['name'])
+for (var i = 0; i < config.length; i++) {
+  doDesktopScreenCapture(config[i]['url'], config[i]['name'])
+  doTabletScreenCapture(config[i]['url'], config[i]['name'])
+  doMobileScreenCapture(config[i]['url'], config[i]['name'])
 }
 
 /**

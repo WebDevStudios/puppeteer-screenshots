@@ -23,10 +23,10 @@ yarn
 
 ## 💻 Usage
 
-1. Edit the list of pages you want to take screenshots of in `src/webPages.js`. When you're finished, save the file.
+1. Edit the list of pages you want to take screenshots of in `src/config.js`. When you're finished, save the file.
 
 ```js
-// src/webPages.js
+// src/config.js
 module.exports = [
   {
     name: 'homepage',
