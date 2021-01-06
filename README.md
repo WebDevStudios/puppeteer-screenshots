@@ -2,12 +2,14 @@
 
 Take automated screenshots of webpages at multiple viewports.
 
+---
+
 ## 🔧 Install
 
 Clone the repo:
 
 ```bash
-git clone git@github.com:gregrickaby/puppeteer-screenshots.git
+git clone git@github.com:WebDevStudios/puppeteer-screenshots.git
 ```
 
 Change directories:
@@ -20,6 +22,8 @@ Install the dependencies:
 ```bash
 yarn
 ```
+
+---
 
 ## 💻 Usage
 
@@ -67,6 +71,8 @@ yarn start
 │   └── homepage.png
 ```
 
+---
+
 ## :octocat: Contributing
 
-Feedback contributions via Github Issues and Pull Requests are welcome. 🍻
+Feedback and contributions via Github Issues and Pull Requests are welcome. 🍻
