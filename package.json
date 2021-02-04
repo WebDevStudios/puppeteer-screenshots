@@ -24,7 +24,7 @@
     "start": "node ./src/app.js"
   },
   "dependencies": {
-    "puppeteer": "^6.0.0"
+    "puppeteer": "^7.0.0"
   },
   "devDependencies": {
     "eslint": "^7.19.0",
