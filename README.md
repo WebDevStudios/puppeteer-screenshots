@@ -4,6 +4,8 @@ Take automated screenshots of webpages at multiple viewports.
 
 ---
 
+## Table of Contents <!-- omit in toc -->
+
 - [🔧 Install](#-install)
 - [💻 Usage](#-usage)
 - [:octocat: Contributing](#octocat-contributing)
