@@ -2,17 +2,24 @@
 
 Take automated screenshots of webpages at multiple viewports.
 
+<a href="https://webdevstudios.com/contact/"><img src="https://webdevstudios.com/wp-content/uploads/2018/04/wds-github-banner.png" alt="WebDevStudios. Your Success is Our Mission."></a>
+
 ---
 
 ## Table of Contents <!-- omit in toc -->
 
-- [🔧 Install](#-install)
-- [💻 Usage](#-usage)
+- [Introduction](#introduction)
+- [Install](#install)
+- [Usage](#usage)
 - [:octocat: Contributing](#octocat-contributing)
 
 ---
 
-## 🔧 Install
+## Introduction
+
+At WebDevStudios, before we ship 🚀 websites we (usually) take before and after screenshots. These screenshots are used in our portfolio and for historical purposes. This simple app was created so we could knock this chore out quickly.
+
+## Install
 
 Clone the repo:
 
@@ -34,12 +41,12 @@ yarn
 
 ---
 
-## 💻 Usage
+## Usage
 
 Before getting started, you'll need create a list of webpages that you want Puppeteer to take screenshots of.
 
-1. Open `src/config.js`
-2. Edit the list giving each object a name and url. (Add as many items as you want!)
+1. Open `src/config.js` in your code editor.
+2. Edit the list, giving each item a name and url. You can add as many items as you want!
 
 ```js
 // src/config.js
