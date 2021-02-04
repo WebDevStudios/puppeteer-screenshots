@@ -4,7 +4,7 @@ const puppeteer = require('puppeteer')
 const config = require('./config.js')
 
 /**
- * Loop over and take screenshots.
+ * When this file is called, loop over and take screenshots.
  */
 for (var i = 0; i < config.length; i++) {
   doDesktopScreenCapture(config[i]['url'], config[i]['name'])
@@ -15,6 +15,7 @@ for (var i = 0; i < config.length; i++) {
 /**
  * Take a screenshot at desktop viewport.
  *
+ * @author WebDevStudios
  * @param {string} url       The URL of the webpage we want to capture.
  * @param {string} siteName  The name of the webpage we want to capture.
  */
@@ -31,7 +32,7 @@ async function doDesktopScreenCapture(url, siteName) {
       deviceScaleFactor: 1
     })
     await page.screenshot({
-      path: `./src/screenshots/desktop/${siteName}.png`,
+      path: `./screenshots/desktop/${siteName}.png`,
       fullPage: true,
       waitUntil: 'networkidle2'
     })
@@ -47,6 +48,7 @@ async function doDesktopScreenCapture(url, siteName) {
 /**
  * Take a screenshot at tablet viewport.
  *
+ * @author WebDevStudios
  * @param {string} url       The URL of the webpage we want to capture.
  * @param {string} siteName  The name of the webpage we want to capture.
  */
@@ -58,7 +60,7 @@ async function doTabletScreenCapture(url, siteName) {
     await page.emulate(puppeteer.devices['iPad Pro'])
     await page.goto(url, {timeout: 60000})
     await page.screenshot({
-      path: `./src/screenshots/tablet/${siteName}.png`,
+      path: `./screenshots/tablet/${siteName}.png`,
       fullPage: true,
       waitUntil: 'networkidle2'
     })
@@ -74,6 +76,7 @@ async function doTabletScreenCapture(url, siteName) {
 /**
  * Take a screenshot at mobile viewport.
  *
+ * @author WebDevStudios
  * @param {string} url       The URL of the webpage we want to capture.
  * @param {string} siteName  The name of the webpage we want to capture.
  */
@@ -85,7 +88,7 @@ async function doMobileScreenCapture(url, siteName) {
     await page.emulate(puppeteer.devices['iPhone X'])
     await page.goto(url, {timeout: 60000})
     await page.screenshot({
-      path: `./src/screenshots/mobile/${siteName}.png`,
+      path: `./screenshots/mobile/${siteName}.png`,
       fullPage: true,
       waitUntil: 'networkidle2'
     })
