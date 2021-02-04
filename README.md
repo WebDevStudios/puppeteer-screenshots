@@ -17,7 +17,7 @@ Take automated screenshots of webpages at multiple viewports.
 
 ## Introduction
 
-At WebDevStudios, before we ship 🚀 websites we (usually) take before and after screenshots. These screenshots are used in our portfolio and for historical purposes. This simple app was created so we could knock this chore out quickly.
+Before we ship 🚀 websites at WebDevStudios, we (usually) take before and after screenshots. These screenshots are used in our portfolio and for historical purposes. This simple app was created so we could knock this chore out quickly.
 
 ## Install
 
