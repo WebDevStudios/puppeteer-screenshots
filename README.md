@@ -9,6 +9,7 @@ Take automated screenshots of webpages at multiple viewports.
 ## Table of Contents <!-- omit in toc -->
 
 - [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
 - [Install](#install)
 - [Usage](#usage)
 - [:octocat: Contributing](#octocat-contributing)
@@ -18,6 +19,15 @@ Take automated screenshots of webpages at multiple viewports.
 ## Introduction
 
 Before we ship 🚀 websites at WebDevStudios, we (usually) take before and after screenshots. These screenshots are used in our portfolio and for historical purposes. This simple app was created so we could knock this chore out quickly.
+
+---
+
+## Prerequisites
+
+- [Node](https://nodejs.org/en/)
+- NPM or Yarn
+
+---
 
 ## Install
 
