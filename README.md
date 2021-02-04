@@ -1,6 +1,12 @@
-# Puppeteer Screenshots
+# Puppeteer Screenshots <!-- omit in toc -->
 
 Take automated screenshots of webpages at multiple viewports.
+
+---
+
+- [🔧 Install](#-install)
+- [💻 Usage](#-usage)
+- [:octocat: Contributing](#octocat-contributing)
 
 ---
 
@@ -13,6 +19,7 @@ git clone git@github.com:WebDevStudios/puppeteer-screenshots.git
 ```
 
 Change directories:
+
 ```bash
 cd puppeteer-screenshots
 ```
@@ -27,7 +34,10 @@ yarn
 
 ## 💻 Usage
 
-1. Edit the list of pages you want to take screenshots of in `src/config.js`. When you're finished, save the file.
+Before getting started, you'll need create a list of webpages that you want Puppeteer to take screenshots of.
+
+1. Open `src/config.js`
+2. Edit the list giving each object a name and url. (Add as many items as you want!)
 
 ```js
 // src/config.js
@@ -47,13 +57,13 @@ module.exports = [
 ]
 ```
 
-2. Run the script:
+3. Run the script:
 
 ```bash
 yarn start
 ```
 
-3. Screenshots will appear in the `src/screenshots` directory:
+Screenshots will appear in the `/screenshots` directory:
 
 ```text
 /screenshots
@@ -75,4 +85,4 @@ yarn start
 
 ## :octocat: Contributing
 
-Feedback and contributions via Github Issues and Pull Requests are welcome. 🍻
+WebDevStudios welcomes contributions via [Discussions](https://github.com/WebDevStudios/puppeteer-screenshots/discussions), [Issues](https://github.com/WebDevStudios/puppeteer-screenshots/issues), or [Pull Requests](https://github.com/WebDevStudios/puppeteer-screenshots/pulls). Stay safe 🍻
