@@ -82,7 +82,7 @@ module.exports = [
 yarn start
 ```
 
-Screenshots will appear in the `/screenshots` directory:
+Individual screenshots will appear in the `/screenshots` directory, along with a handy `.zip` file containing all the screenshots.
 
 ```text
 /screenshots
@@ -98,6 +98,7 @@ Screenshots will appear in the `/screenshots` directory:
 │   ├── blog.png
 │   ├── contact.png
 │   └── homepage.png
+│ screenshots.zip
 ```
 
 ---
