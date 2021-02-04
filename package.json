@@ -2,20 +2,17 @@
   "name": "puppeteer-screenshots",
   "version": "1.0.0",
   "description": "Take automated screenshots of webpages at multiple viewports.",
-  "homepage": "https://github.com/gregrickaby/puppeteer-screenshots/blob/main/README.md",
+  "homepage": "https://github.com/webdevstudios/puppeteer-screenshots/blob/main/README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gregrickaby/puppeteer-screenshots.git"
+    "url": "git+https://github.com/webdevstudios/puppeteer-screenshots.git"
   },
-  "author": "Greg Rickaby <gregrickaby@gmail.com>",
+  "author": "WebDevStudios <contact@webdevstudios.com>",
   "bugs": {
-    "url": "https://github.com/gregrickaby/puppeteer-screenshots/issues"
+    "url": "https://github.com/webdevstudios/puppeteer-screenshots/issues"
   },
   "private": true,
   "license": "GPL-2.0",
-  "engines": {
-    "node": ">=12"
-  },
   "main": "src/app.js",
   "scripts": {
     "format": "npx prettier --config=prettier.config.js '**/*.{js,ts,md,html,json}' --write || true",
@@ -24,7 +21,7 @@
     "start": "node ./src/app.js"
   },
   "dependencies": {
-    "puppeteer": "^7.0.0"
+    "puppeteer": "^7.0.1"
   },
   "devDependencies": {
     "eslint": "^7.19.0",
