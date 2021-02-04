@@ -2,6 +2,11 @@
 process.setMaxListeners(100)
 const puppeteer = require('puppeteer')
 const config = require('./config.js')
+const zipdir = require('zip-dir')
+
+const options = {
+  screenshotDirectory: './screenshots'
+}
 
 /**
  * When this file is called, loop over and take screenshots.
@@ -10,6 +15,19 @@ for (var i = 0; i < config.length; i++) {
   doDesktopScreenCapture(config[i]['url'], config[i]['name'])
   doTabletScreenCapture(config[i]['url'], config[i]['name'])
   doMobileScreenCapture(config[i]['url'], config[i]['name'])
+  zipScreenshots()
+}
+
+/**
+ * Zip up the /screenshots directory.
+ *
+ * @author WebDevStudios
+ * @see https://www.npmjs.com/package/zip-dir
+ */
+async function zipScreenshots() {
+  zipdir(options.screenshotDirectory, {
+    saveTo: `${options.screenshotDirectory}/screenshots.zip`
+  })
 }
 
 /**
@@ -32,7 +50,7 @@ async function doDesktopScreenCapture(url, siteName) {
       deviceScaleFactor: 1
     })
     await page.screenshot({
-      path: `./screenshots/desktop/${siteName}.png`,
+      path: `${options.screenshotDirectory}/desktop/${siteName}.png`,
       fullPage: true,
       waitUntil: 'networkidle2'
     })
@@ -60,7 +78,7 @@ async function doTabletScreenCapture(url, siteName) {
     await page.emulate(puppeteer.devices['iPad Pro'])
     await page.goto(url, {timeout: 60000})
     await page.screenshot({
-      path: `./screenshots/tablet/${siteName}.png`,
+      path: `${options.screenshotDirectory}/tablet/${siteName}.png`,
       fullPage: true,
       waitUntil: 'networkidle2'
     })
@@ -88,7 +106,7 @@ async function doMobileScreenCapture(url, siteName) {
     await page.emulate(puppeteer.devices['iPhone X'])
     await page.goto(url, {timeout: 60000})
     await page.screenshot({
-      path: `./screenshots/mobile/${siteName}.png`,
+      path: `${options.screenshotDirectory}/mobile/${siteName}.png`,
       fullPage: true,
       waitUntil: 'networkidle2'
     })
