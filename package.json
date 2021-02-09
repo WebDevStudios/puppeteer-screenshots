@@ -15,30 +15,20 @@
   "license": "GPL-2.0",
   "main": "src/app.js",
   "scripts": {
-    "format": "npx prettier --config=prettier.config.js '**/*.{js,ts,md,html,json}' --write || true",
+    "format": "npx prettier --config=prettier.config.js '**/*.{js,ts,md,html,json,yml}' --write || true",
     "lint": "yarn format && yarn lint:js",
     "lint:js": "npx eslint --config=.eslintrc.js ./ --fix || true",
     "start": "node ./src/app.js"
   },
   "dependencies": {
-    "puppeteer": "^7.0.1",
+    "puppeteer": "^7.0.4",
     "zip-dir": "^2.0.0"
   },
   "devDependencies": {
+    "@arkweid/lefthook": "^0.7.2",
     "eslint": "^7.19.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "husky": "^4.3.8",
-    "lint-staged": "^10.5.4",
     "prettier": "^2.2.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,ts}": "npx eslint --config=.eslintrc.js --fix",
-    "*.{md,html,json}": "npx prettier --config=prettier.config.js --write"
   }
 }
