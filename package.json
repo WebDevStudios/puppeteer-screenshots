@@ -16,7 +16,7 @@
   "main": "src/app.js",
   "scripts": {
     "format": "npx prettier --config=prettier.config.js '**/*.{js,ts,md,html,json,yml}' --write || true",
-    "lint": "yarn format && yarn lint:js",
+    "lint": "npm run format && npm run lint:js",
     "lint:js": "npx eslint --config=.eslintrc.js ./ --fix || true",
     "start": "node ./src/app.js"
   },
