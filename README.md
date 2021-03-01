@@ -1,6 +1,6 @@
 # Puppeteer Screenshots <!-- omit in toc -->
 
-Take automated screenshots of webpages at multiple viewports.
+A simple script for taking automated screenshots of webpages at multiple viewports.
 
 <a href="https://webdevstudios.com/contact/"><img src="https://webdevstudios.com/wp-content/uploads/2018/04/wds-github-banner.png" alt="WebDevStudios. Your Success is Our Mission."></a>
 
@@ -8,24 +8,16 @@ Take automated screenshots of webpages at multiple viewports.
 
 ## Table of Contents <!-- omit in toc -->
 
-- [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Install](#install)
 - [Usage](#usage)
-- [:octocat: Contributing](#octocat-contributing)
-
----
-
-## Introduction
-
-When we ship websites at WebDevStudios, we take before and after screenshots. These screenshots are used in our portfolio and for historical purposes. This simple app was created so we can knock this chore out quickly.
+- [Contributing :octocat:](#contributing-octocat)
 
 ---
 
 ## Prerequisites
 
 - [Node](https://nodejs.org/en/)
-- NPM or Yarn
 
 ---
 
@@ -46,17 +38,15 @@ cd puppeteer-screenshots
 Install the dependencies:
 
 ```bash
-yarn
+npm i
 ```
 
 ---
 
 ## Usage
 
-Before getting started, you'll need create a list of webpages that you want Puppeteer to take screenshots of.
-
-1. Open `src/config.js` in your code editor.
-2. Edit the list, giving each item a name and url. You can add as many items as you want!
+1. Open `src/config.js`
+2. Add your webpages along with a name and url:
 
 ```js
 // src/config.js
@@ -79,10 +69,10 @@ module.exports = [
 3. Run the script:
 
 ```bash
-yarn start
+npm start
 ```
 
-Individual screenshots will appear in the `/screenshots` directory, along with a handy `.zip` file containing all the screenshots.
+Individual screenshots will appear in the `/screenshots` directory along with a `.zip`.
 
 ```text
 /screenshots
@@ -103,6 +93,6 @@ Individual screenshots will appear in the `/screenshots` directory, along with a
 
 ---
 
-## :octocat: Contributing
+## Contributing :octocat:
 
 WebDevStudios welcomes contributions via [Discussions](https://github.com/WebDevStudios/puppeteer-screenshots/discussions), [Issues](https://github.com/WebDevStudios/puppeteer-screenshots/issues), or [Pull Requests](https://github.com/WebDevStudios/puppeteer-screenshots/pulls). Stay safe 🍻
