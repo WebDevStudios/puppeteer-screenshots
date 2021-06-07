@@ -25,10 +25,10 @@
     "zip-dir": "^2.0.0"
   },
   "devDependencies": {
-    "@arkweid/lefthook": "^0.7.5",
-    "eslint": "^7.27.0",
+    "@arkweid/lefthook": "^0.7.6",
+    "eslint": "^7.28.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "prettier": "^2.3.0"
+    "prettier": "^2.3.1"
   }
 }
