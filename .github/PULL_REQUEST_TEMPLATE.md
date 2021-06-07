@@ -1,4 +1,4 @@
-Closes [Link to Github issue](#)
+Closes #
 
 ### Description
 
