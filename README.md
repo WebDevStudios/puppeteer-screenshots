@@ -93,6 +93,6 @@ Individual screenshots will appear in the `/screenshots` directory along with a 
 
 ---
 
-## Contributing :octocat
+## Contributing :octocat:
 
 WebDevStudios welcomes contributions via [Issues](https://github.com/WebDevStudios/puppeteer-screenshots/issues) and [Pull Requests](https://github.com/WebDevStudios/puppeteer-screenshots/pulls). Stay safe 🍻
