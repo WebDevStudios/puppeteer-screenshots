@@ -15,7 +15,7 @@
   "license": "GPL-2.0",
   "main": "src/app.js",
   "scripts": {
-    "format": "npx prettier '**/*.{js,ts,md,html,json,yml}' --config=prettier.config.js --write || true",
+    "format": "npx prettier '**/*.{js,ts,md,html,json,yml}' --config=.prettierrc.js --write || true",
     "lint": "npm run format && npm run lint:js",
     "lint:js": "npx eslint '**/*.{js,ts}' --config=.eslintrc.js --fix || true",
     "start": "node ./src/app.js"
