@@ -2,7 +2,7 @@
 
 A simple script for taking automated screenshots of webpages at multiple viewports.
 
-<a href="https://webdevstudios.com/contact/"><img src="https://webdevstudios.com/wp-content/uploads/2018/04/wds-github-banner.png" alt="WebDevStudios. Your Success is Our Mission."></a>
+[![WebDevStudios. Your Success is Our Mission.](https://webdevstudios.com/wp-content/uploads/2018/04/wds-github-banner.png)](https://webdevstudios.com/contact/)
 
 ---
 
@@ -11,7 +11,7 @@ A simple script for taking automated screenshots of webpages at multiple viewpor
 - [Prerequisites](#prerequisites)
 - [Install](#install)
 - [Usage](#usage)
-- [Contributing :octocat:](#contributing-octocat)
+- [Contributing :octocat](#contributing-octocat)
 
 ---
 
@@ -93,6 +93,6 @@ Individual screenshots will appear in the `/screenshots` directory along with a 
 
 ---
 
-## Contributing :octocat:
+## Contributing :octocat
 
-WebDevStudios welcomes contributions via [Discussions](https://github.com/WebDevStudios/puppeteer-screenshots/discussions), [Issues](https://github.com/WebDevStudios/puppeteer-screenshots/issues), or [Pull Requests](https://github.com/WebDevStudios/puppeteer-screenshots/pulls). Stay safe 🍻
+WebDevStudios welcomes contributions via [Issues](https://github.com/WebDevStudios/puppeteer-screenshots/issues) and [Pull Requests](https://github.com/WebDevStudios/puppeteer-screenshots/pulls). Stay safe 🍻
