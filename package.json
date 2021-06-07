@@ -15,13 +15,13 @@
   "license": "GPL-2.0",
   "main": "src/app.js",
   "scripts": {
-    "format": "npx prettier --config=prettier.config.js '**/*.{js,ts,md,html,json,yml}' --write || true",
+    "format": "npx prettier '**/*.{js,ts,md,html,json,yml}' --config=prettier.config.js --write || true",
     "lint": "npm run format && npm run lint:js",
-    "lint:js": "npx eslint --config=.eslintrc.js ./ --fix || true",
+    "lint:js": "npx eslint '**/*.{js,ts}' --config=.eslintrc.js --fix || true",
     "start": "node ./src/app.js"
   },
   "dependencies": {
-    "puppeteer": "^9.1.1",
+    "puppeteer": "^10.0.0",
     "zip-dir": "^2.0.0"
   },
   "devDependencies": {
