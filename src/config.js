@@ -1,17 +1,36 @@
 /**
  * List of web pages to screenshot.
  */
-module.exports = [
-  {
-    name: 'homepage',
-    url: 'https://webdevstudios.com/'
+module.exports = {
+  options: {
+    fullPage: true,
+    waitUntil: 'networkidle2'
   },
-  {
-    name: 'blog',
-    url: 'https://webdevstudios.com/blog/'
+  devices: {
+    desktop: {
+      viewportWidth: 1920,
+      viewportHeight: 1080,
+      deviceScaleFactor: 1
+    },
+    tablet: {
+      device: 'iPad Pro'
+    },
+    mobile: {
+      device: 'iPhone X'
+    }
   },
-  {
-    name: 'contact',
-    url: 'https://webdevstudios.com/contact/'
-  }
-]
+  pages: [
+    {
+      name: 'homepage',
+      url: 'https://webdevstudios.com/'
+    },
+    {
+      name: 'blog',
+      url: 'https://webdevstudios.com/blog/'
+    },
+    {
+      name: 'contact',
+      url: 'https://webdevstudios.com/contact/'
+    }
+  ]
+}
