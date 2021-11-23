@@ -26,7 +26,7 @@ for (var i = 0; i < config.length; i++) {
  */
 async function zipScreenshots() {
   zipdir(options.screenshotDirectory, {
-    saveTo: `${options.screenshotDirectory}/screenshots.zip`
+    saveTo: `screenshots.zip`
   })
 }
 
