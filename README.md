@@ -46,7 +46,7 @@ npm i
 ## Usage
 
 1. Open `src/config.js`
-2. Add your webpages along with a name and url:
+2. Add webpages along with a name and url:
 
 ```js
 // src/config.js
@@ -72,23 +72,23 @@ module.exports = [
 npm start
 ```
 
-Individual screenshots will appear in the `/screenshots` directory along with a `.zip`.
+Individual screenshots (and a `.zip`) will appear in the `/screenshots` directory.
 
 ```text
-/screenshots
-├── /desktop
-│   ├── blog.png
-│   ├── contact.png
-│   └── homepage.png
-├── /mobile
-│   ├── blog.png
-│   ├── contact.png
-│   └── homepage.png
-├── /tablet
-│   ├── blog.png
-│   ├── contact.png
-│   └── homepage.png
-│ screenshots.zip
+├── screenshots
+│   ├── desktop
+│   │   ├── blog.png
+│   │   ├── contact.png
+│   │   └── homepage.png
+│   ├── mobile
+│   │   ├── blog.png
+│   │   ├── contact.png
+│   │   └── homepage.png
+│   └── tablet
+│       ├── blog.png
+│       ├── contact.png
+│       └── homepage.png
+├── screenshots.zip
 ```
 
 ---
