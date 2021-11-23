@@ -46,7 +46,7 @@ npm i
 ## Usage
 
 1. Open `src/config.js`
-2. Add webpages along with a name and url:
+2. Add the name and url of webpages you want Puppeteer to screenshot:
 
 ```js
 // src/config.js
