@@ -21,7 +21,7 @@
     "start": "node ./src/app.js"
   },
   "dependencies": {
-    "puppeteer": "^12.0.0",
+    "puppeteer": "^13.0.1",
     "zip-dir": "^2.0.0"
   },
   "devDependencies": {
